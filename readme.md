@@ -1,8 +1,23 @@
-### My ~/.js files help me remove ads, hack others websites.
-
 ### What is dotjs, How does it work
 
-Check out https://github.com/defunkt/dotjs
+Check out [defunkt/dotjs](https://github.com/defunkt/dotjs)
+
+### Usage
+
+Make sure you've installed dotjs, then:
+
+```bash
+cd ~
+git clone https://github.com/ryaneof/dotjsfiles.git ~/.js
+```
+
+### Branches
+
+- `origin/master` full feature
+- `origin/improve-ux` make improvement to user experience
+- `origin/remove-ads` remove annoying (not all) ads
+
+You can switch to a seperate branch according to your needs : )
 
 ### License
 
