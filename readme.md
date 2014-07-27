@@ -8,7 +8,7 @@ Make sure you've installed dotjs, then:
 
 ```bash
 cd ~
-git clone https://github.com/ryaneof/dotjsfiles.git ~/.js
+git clone https://github.com/ryaneof/.js.git
 ```
 
 ### Branches
@@ -16,7 +16,7 @@ git clone https://github.com/ryaneof/dotjsfiles.git ~/.js
 - `origin/master` full feature
 - `origin/improve-ux` make improvement to user experience
 - `origin/remove-ads` remove annoying (not all) ads
-- `origin/just-for-fun` just for fun.
+- `origin/just-for-fun` just for fun
 
 You can switch to a seperate branch according to your needs : )
 
