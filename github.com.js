@@ -149,6 +149,32 @@
 
         initProfile: function () {
             // profile page
+            var elProfileName = $('.vcard-username');
+            var profileUserName = elProfileName.text().trim();
+            var currentUserName = $('.name').text().trim();
+
+            if (!profileUserName || !currentUserName) {
+                return;
+            }
+
+            // add 'FOLLOWS YOU' if profile user is following you.
+            $.ajax({
+                type: 'get',
+                url: 'https://api.github.com/users/' + profileUserName + '/following/' + currentUserName,
+                success: function (raw) {
+                    $([
+                        '<span style="',
+                        'font-size: 12px; ',
+                        'font-family: Helvetica; ',
+                        'font-weight: normal; ',
+                        'color: #AAA; ',
+                        'display: block; ">FOLLOWS YOU</span>'
+                    ].join('')).insertAfter(elProfileName);
+                },
+                error: function (raw) {
+                    // not following you, or some else error.
+                }
+            });
         },
 
         initRepo: function () {
