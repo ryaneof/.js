@@ -7,8 +7,13 @@
     		$('.fixed-summary').removeClass('fixed-summary');
     	},
 
+        unbindUselessEvents: function () {
+            $('.zm-editable-content').unbind('click');
+        },
+
         init: function () {
             this.expandAllAnswers();
+            this.unbindUselessEvents();
         }
     };
 
