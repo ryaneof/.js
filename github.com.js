@@ -110,7 +110,7 @@
         getImgHTMLStr: function (opts) {
             var str = [
                 '<img class="dotjs-avatar" ',
-                ' src="http://api.iryan.net/github-avatar/',
+                ' src="https://iryan.net/api/github-avatar/',
                 opts.user, '"',
                 ' width="20" height="20" ',
                 ' style="position: absolute; box-shadow: 0 1px 0 #fff; border-radius: 3px;',
